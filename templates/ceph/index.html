@@ -88,48 +88,48 @@
         </h2>
       </div>
       <div class="col">
-        <div class="row">
-          <div class="col-3">
-            <div class="p-image-container is-highlighted">
-              {{ image(url="https://assets.ubuntu.com/v1/9eff1bee-yahoo.png",
-                            alt="",
-                            width="852",
-                            height="1278",
-                            hi_def=True,
-                            loading="lazy",
-                            attrs={"class": "p-image-container__image"},) | safe
-              }}
+        <div class="row p-equal-height-row--wrap has-divider-3">
+          <div class="p-equal-height-row__col">
+            <div class="p-equal-height-row__item p-image-container is-highlighted">
+              <div class="p-image-container--3-2-on-small p-image-container--square-on-medium p-image-container--2-3-on-large is-highlighted">
+                {{ image(url="https://assets.ubuntu.com/v1/9eff1bee-yahoo.png",
+                                alt="",
+                                width="250",
+                                hi_def=True,
+                                loading="lazy",
+                                attrs={"class": "p-image-container__image"},) | safe
+                }}
+              </div>
             </div>
-            <p>
+            <p class="p-equal-height-row__item">
               In the early days of Ceph, Yahoo! Japan searched for a local company who could support them in implementing an open-source distributed storage solution from the Linux operating system all the way to Ceph.
             </p>
-            <p>
+            <p class="p-equal-height-row__item">
               Canonical provided not only Ceph but also the tooling and expertise that reduced the OpEx associated with managing a large storage cluster.
             </p>
-            <div class="p-cta-block">
-              <a href="https://pages.ubuntu.com/rs/066-EOV-335/images/Yahoo%21%20JAPAN%20User%20case%20study-v2_AW.pdf">Learn more about Yahoo! Japan's Ceph cluster&nbsp;&rsaquo;</a>
-            </div>
+            <a class="p-equal-height-row__item"
+               href="https://pages.ubuntu.com/rs/066-EOV-335/images/Yahoo%21%20JAPAN%20User%20case%20study-v2_AW.pdf">Learn more about Yahoo! Japan's Ceph cluster&nbsp;&rsaquo;</a>
           </div>
-          <div class="col-3">
-            <div class="p-image-container is-highlighted">
-              {{ image(url="https://assets.ubuntu.com/v1/0f81a8ab-wellcome%20sanger%20institute.png",
-                            alt="",
-                            width="852",
-                            height="1278",
-                            hi_def=True,
-                            loading="lazy",
-                            attrs={"class": "p-image-container__image"},) | safe
-              }}
+          <div class="p-equal-height-row__col">
+            <div class="p-equal-height-row__item p-image-container is-highlighted">
+              <div class="p-image-container--3-2-on-small p-image-container--square-on-medium p-image-container--2-3-on-large is-highlighted">
+                {{ image(url="https://assets.ubuntu.com/v1/0f81a8ab-wellcome%20sanger%20institute.png",
+                                alt="",
+                                width="250",
+                                hi_def=True,
+                                loading="lazy",
+                                attrs={"class": "p-image-container__image"},) | safe
+                }}
+              </div>
             </div>
-            <p>
+            <p class="p-equal-height-row__item">
               The Wellcome Sanger Institute initially opted for self-maintained Ceph storage, but as their capacity needs grew from 3 PB to over 20 PB, they turned to Canonical to resolve their scaling issues.
             </p>
-            <p>
+            <p class="p-equal-height-row__item">
               With the help of Canonical support, the Institute's latest Ceph rollout decreased from a month to just four days.
             </p>
-            <div class="p-cta-block">
-              <a href="https://pages.ubuntu.com/rs/066-EOV-335/images/Wellcome%20Sanger%20Institute%20Case%20Study.pdf">Learn how Wellcome Sanger achieved a cost-effective Ceph infrastructure&nbsp;&rsaquo;</a>
-            </div>
+            <a class="p-equal-height-row__item"
+               href="https://pages.ubuntu.com/rs/066-EOV-335/images/Wellcome%20Sanger%20Institute%20Case%20Study.pdf">Learn how Wellcome Sanger achieved a cost-effective Ceph infrastructure&nbsp;&rsaquo;</a>
           </div>
         </div>
       </div>
@@ -194,14 +194,13 @@
         </div>
       </div>
     </div>
-    <div class="p-equal-height-row">
+    <div class="p-equal-height-row--wrap">
       <div class="p-equal-height-row__col">
         <div class="p-equal-height-row__item">
-          <div class="p-image-container is-highlighted p-image-container--3-2-on-medium">
+          <div class="p-image-container--3-2-on-small p-image-container--square-on-medium p-image-container--2-3-on-large is-highlighted">
             {{ image(url="https://assets.ubuntu.com/v1/a36e134c-private-cloud.png",
                         alt="",
-                        width="852",
-                        height="1278",
+                        width="250",
                         hi_def=True,
                         loading="lazy",
                         attrs={"class": "p-image-container__image"},) | safe
@@ -222,11 +221,10 @@
       </div>
       <div class="p-equal-height-row__col">
         <div class="p-equal-height-row__item">
-          <div class="p-image-container is-highlighted p-image-container--3-2-on-medium">
+          <div class="p-image-container--3-2-on-small p-image-container--square-on-medium p-image-container--2-3-on-large is-highlighted">
             {{ image(url="https://assets.ubuntu.com/v1/4f840180-cephadm.png",
                         alt="",
-                        width="852",
-                        height="1278",
+                        width="250",
                         hi_def=True,
                         loading="lazy",
                         attrs={"class": "p-image-container__image"},) | safe
@@ -245,11 +243,10 @@
       </div>
       <div class="p-equal-height-row__col">
         <div class="p-equal-height-row__item">
-          <div class="p-image-container is-highlighted p-image-container--3-2-on-medium">
+          <div class="p-image-container--3-2-on-small p-image-container--square-on-medium p-image-container--2-3-on-large is-highlighted">
             {{ image(url="https://assets.ubuntu.com/v1/a729fd97-edge%20cloud.png",
                         alt="",
-                        width="852",
-                        height="1278",
+                        width="250",
                         hi_def=True,
                         loading="lazy",
                         attrs={"class": "p-image-container__image"},) | safe
@@ -268,11 +265,10 @@
       </div>
       <div class="p-equal-height-row__col">
         <div class="p-equal-height-row__item">
-          <div class="p-image-container is-highlighted p-image-container--3-2-on-medium">
+          <div class="p-image-container--3-2-on-small p-image-container--square-on-medium p-image-container--2-3-on-large is-highlighted">
             {{ image(url="https://assets.ubuntu.com/v1/51cfec1b-training.png",
                         alt="",
-                        width="852",
-                        height="1278",
+                        width="250",
                         hi_def=True,
                         loading="lazy",
                         attrs={"class": "p-image-container__image"},) | safe
@@ -387,18 +383,24 @@
         <h2>Getting started with Ceph on Ubuntu</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-6">
-        <hr class="p-rule--highlight u-no-margin--bottom" />
-        <div class="p-card--overlay u-no-padding--top"
-             style="padding: 1.5rem;
-                    height: 95%;
-                    overflow: hidden">
-          <div class="row p-section--shallow">
+
+    <div class="p-equal-height-row--wrap p-equal-height-row-50-50"
+         style="grid-gap: 2rem">
+      <div class="p-equal-height-row__col p-card--overlay"
+           style="position: relative;
+                  padding: 1.5rem">
+        <hr class="p-rule--highlight u-no-margin--bottom"
+            style="position: absolute;
+                   top: 0;
+                   left: 0;
+                   right: 0" />
+        <div class="p-equal-height-row__item">
+          <div class="p-section--shallow">
             <h3>Charmed Ceph</h3>
           </div>
-          <hr class="p-rule--muted" />
-          <ul class="p-list--divided p-section--shallow">
+        </div>
+        <div class="p-equal-height-row__item">
+          <ul class="p-list--divided">
             <li class="p-list__item is-ticked">Deploy large-scale complex Ceph clusters in minutes</li>
             <li class="p-list__item is-ticked">Easily upgrade to newer Ceph versions</li>
             <li class="p-list__item is-ticked">Provide model-driven orchestration for repeatability and predictability</li>
@@ -408,22 +410,26 @@
             <li class="p-list__item is-ticked">Replace failing disk drives and retire old hardware</li>
             <li class="p-list__item is-ticked">Expand the capacity of your storage cluster</li>
           </ul>
-          <div class="p-cta-block">
-            <a href="https://ubuntu.com/ceph/install">Install Charmed Ceph&nbsp;&rsaquo;</a>
-          </div>
+        </div>
+        <div class="p-equal-height-row__item">
+          <a class="p-cta-block" href="/ceph/install">Install Charmed Ceph&nbsp;&rsaquo;</a>
         </div>
       </div>
-      <div class="col-6">
-        <hr class="p-rule--highlight u-no-margin--bottom" />
-        <div class="p-card--overlay u-no-padding--top"
-             style="padding: 1.5rem;
-                    height: 95%;
-                    overflow: hidden">
-          <div class="row p-section--shallow">
+      <div class="p-equal-height-row__col p-card--overlay"
+           style="position: relative;
+                  padding: 1.5rem">
+        <hr class="p-rule--highlight u-no-margin--bottom"
+            style="position: absolute;
+                   top: 0;
+                   left: 0;
+                   right: 0" />
+        <div class="p-equal-height-row__item">
+          <div class="p-section--shallow">
             <h3>Ceph support on Ubuntu</h3>
           </div>
-          <hr class="p-rule--muted" />
-          <ul class="p-list--divided p-section--shallow">
+        </div>
+        <div class="p-equal-height-row__item">
+          <ul class="p-list--divided">
             <li class="p-list__item is-ticked">
               Ceph support is included in <a href="/pro">Ubuntu Pro</a>
             </li>
@@ -435,23 +441,25 @@
               Alternatively, get extended security maintenance if all you need is peace of mind by consuming security patches from the world's leading security team
             </li>
           </ul>
-          <div class="p-cta-block">
-            <a href="/pricing/infra">Learn more about Ubuntu Pro&nbsp;&rsaquo;</a>
-          </div>
+        </div>
+        <div class="p-equal-height-row__item">
+          <a class="p-cta-block" href="/pricing/infra">Learn more about Ubuntu Pro&nbsp;&rsaquo;</a>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <hr class="p-rule--highlight u-no-margin--bottom" />
-        <div class="p-card--overlay u-no-padding--top"
-             style="padding: 1.5rem;
-                    height: 95%;
-                    overflow: hidden">
-          <div class="row p-section--shallow">
+      <div class="p-equal-height-row__col p-card--overlay"
+           style="position: relative;
+                  padding: 1.5rem">
+        <hr class="p-rule--highlight u-no-margin--bottom"
+            style="position: absolute;
+                   top: 0;
+                   left: 0;
+                   right: 0" />
+        <div class="p-equal-height-row__item">
+          <div class="p-section--shallow">
             <h3>MicroCeph</h3>
           </div>
-          <hr class="p-rule--muted" />
+        </div>
+        <div class="p-equal-height-row__item">
           <ul class="p-list--divided p-section--shallow">
             <li class="p-list__item is-ticked">Streamlined and effortless Ceph</li>
             <li class="p-list__item is-ticked">Opinionated and automated cluster  deployment and management</li>
@@ -460,21 +468,25 @@
             <li class="p-list__item is-ticked">Isolated deployment package to protect underlying systems</li>
             <li class="p-list__item is-ticked">Developer friendly, ideal for training delivery and local development</li>
           </ul>
-          <div class="p-cta-block">
-            <a href="https://snapcraft.io/microceph">Install MicroCeph&nbsp;&rsaquo;</a>
-          </div>
+        </div>
+        <div class="p-equal-height-row--item">
+          <a class="p-cta-block" href="https://snapcraft.io/microceph">Install MicroCeph&nbsp;&rsaquo;</a>
         </div>
       </div>
-      <div class="col-6">
-        <hr class="p-rule--highlight u-no-margin--bottom" />
-        <div class="p-card--overlay u-no-padding--top"
-             style="padding: 1.5rem;
-                    height: 95%;
-                    overflow: hidden">
-          <div class="row p-section--shallow">
+      <div class="p-equal-height-row__col p-card--overlay"
+           style="position: relative;
+                  padding: 1.5rem">
+        <hr class="p-rule--highlight u-no-margin--bottom"
+            style="position: absolute;
+                   top: 0;
+                   left: 0;
+                   right: 0" />
+        <div class="p-equal-height-row__item">
+          <div class="p-section--shallow">
             <h3>Managed Ceph</h3>
           </div>
-          <hr class="p-rule--muted" />
+        </div>
+        <div class="p-equal-height-row__item">
           <ul class="p-list--divided p-section--shallow">
             <li class="p-list__item is-ticked">Fully managed storage cluster, on your servers, at your location</li>
             <li class="p-list__item is-ticked">Built in 2 weeks using a proven reference architecture</li>
@@ -483,9 +495,9 @@
             <li class="p-list__item is-ticked">Modern monitoring and log management</li>
             <li class="p-list__item is-ticked">Canonical hands over the keys when you are ready</li>
           </ul>
-          <div class="p-cta-block">
-            <a href="/ceph/managed">Learn more about fully managed Ceph&nbsp;&rsaquo;</a>
-          </div>
+        </div>
+        <div class="p-equal-height-row__item">
+          <a class="p-cta-block" href="/ceph/managed">Learn more about fully managed Ceph&nbsp;&rsaquo;</a>
         </div>
       </div>
     </div>
