@@ -1,0 +1,101 @@
+{
+"form": {
+	"/certified/202309-32027": {                           
+			"templatePath": "/certified/model-details.html", 
+			"isModal": true,                            
+			"modalId": "nxp-modal-form", 
+			"formData": {
+				"title": "Interested in optimized Ubuntu on NXP platforms?",
+				"formId": "7873",
+				"returnUrl": "/certified/202309-32027#contact-form-success",
+				"product": ""
+			},
+      "fieldsets": [
+        {
+          "title": "Your company is:",
+          "id": "company-type",
+          "inputType": "checkbox",
+          "isRequired": false,
+          "fields": [
+            {
+              "type": "checkbox",
+              "id": "odm-oem",
+              "label": "an ODM/OEM ",
+              "value": "an ODM/OEM"
+            },
+            {
+              "type": "checkbox",
+              "id": "end-customer",
+              "label": "an end customer",
+              "value": "an end customer"
+            }
+          ]
+        },
+        {
+          "title": "Do you have a commercial project?",
+          "id": "commercial-project",
+          "inputType": "checkbox",
+          "isRequired": false,
+          "fields": [
+            {
+              "type": "checkbox",
+              "id": "yes",
+              "label": "Yes",
+              "value": "Yes"
+            },
+            {
+              "type": "checkbox",
+              "id": "no",
+              "label": "No",
+              "value": "No"
+            },
+            {
+              "type": "checkbox",
+              "id": "not-applicable",
+              "label": "Not applicable",
+              "value": "Not applicable"
+            }
+          ]
+        },
+        {
+          "title": "Which NXP platforms are you interested in?",
+          "id": "nxp-platforms",
+          "inputType": "checkbox",
+          "isRequired": false,
+          "fields": [
+            {
+              "type": "checkbox",
+              "id": "imx8mp-evk-server",
+              "label": "i.MX8MP EVK (server)",
+              "value": "i.MX8MP EVK (server)"
+            },
+            {
+              "type": "checkbox",
+              "id": "imx8mp-evk-core",
+              "label": "i.MX8MP EVK (core)",
+              "value": "i.MX8MP EVK (core)"
+            },
+            {
+              "type": "checkbox",
+              "id": "other",
+              "label": "Other",
+              "value": "Other"
+            }
+          ]
+        },
+        {
+          "title": "Tell us more about your project (use case, volume, etc.):",
+          "id": "about-you",
+          "noCommentsFromLead": true,
+          "fields": [
+            {
+              "type": "tel",
+              "id": "phone",
+              "label": "Mobile/cell phone number"
+            }
+          ]
+        }
+      ]
+		}
+	}
+}

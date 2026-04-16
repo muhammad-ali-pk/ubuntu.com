@@ -88,12 +88,10 @@
               <p>
                 Pre-installed in some regions with a custom Ubuntu image that takes advantage of the system's hardware features and may include additional software. Standard images of Ubuntu may not work well, or at all.
               </p>
-              {% if vendor == "Xilinx" %}
-                <p style="padding-top:1.4rem;">
-                  <a href="/download/amd" class="p-button">Download</a>
-                </p>
+              {% if vendor == "NXP" %}
+                <a class="p-button js-invoke-modal" aria-controls="nxp-modal-form">Get in touch</a>
               {% endif %}
-            {% elif release.level == "Certified" %}
+              {% elif release.level == "Certified" %}
               <p>
                 The {{ vendor }} {{ name }} with the components described below has been awarded the status of certified for Ubuntu.
               </p>
@@ -223,5 +221,6 @@
       });
     });
   </script>
+  {{ load_form("/certified/202309-32027") | safe }}
 
 {% endblock %}
