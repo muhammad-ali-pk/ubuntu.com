@@ -16,6 +16,10 @@
   is-paper
 {% endblock body_class %}
 
+{% block extra_metatags %}
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
+{% endblock extra_metatags %}
+
 {% block content %}
 
   {% call(slot) vf_hero(
@@ -30,16 +34,17 @@
     {%- endif -%}
     {%- if slot == 'image' -%}
       <div class="u-embedded-media">
-        <iframe
-          class="u-embedded-media__element"
+        <lite-youtube videoId="ZyM7s6iFMrE"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/ZyM7s6iFMrE"
-          title="Ubuntu Pro for Azure video"
-          frameborder="0"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          posterquality="maxresdefault"
+          videotitle="Ubuntu Pro for Azure"
+          class="u-embedded-media__element"
+        >
+        <a href="https://www.youtube.com/watch?v=ZyM7s6iFMrE" title="Play Video">
+            <span class="lyt-visually-hidden">Ubuntu Pro for Azure</span>
+        </a>
+        </lite-youtube>
       </div>
     {%- endif -%}
   {% endcall -%}
