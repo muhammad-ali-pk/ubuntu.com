@@ -14,12 +14,17 @@
   is-paper
 {% endblock body_class %}
 
+{% from "_macros/vf_hero.jinja" import vf_hero %}
+
 {% block outer_content %}
-<section class="p-section--hero">
-  <div class="u-fixed-width">
-    <h1>Interested in optimized Ubuntu on NXP platforms?</h1>
-  </div>
-</section>
+
+{% call(slot) vf_hero(
+  title_text='Interested in optimized Ubuntu on NXP platforms?',
+  layout='fallback',
+  is_split_on_medium=true,
+) -%}
+{% endcall -%}
+
 <form action="/marketo/submit" method="post" id="mktoForm_7873" class="is-paper">
   <legend class="u-off-screen">Contact information</legend>
   <div class="p-section">
@@ -118,7 +123,7 @@
       <div class="grid-col">
         <ul class="p-list">
           <li class="p-list__item">
-              <textarea aria-label="Add details about your AI or MLOps requirements" id="add-details-about-your-requirements" rows="5" maxlength="2000"></textarea>
+              <textarea aria-label="Add details about your project" id="add-details-about-your-requirements" rows="5" maxlength="2000"></textarea>
           </li>
         </ul>
       </div>
@@ -128,8 +133,8 @@
   <div class="p-section">
     <div class="grid-row--50-50">
       <hr class="p-rule">
-      <div class="grid-col js-formfield">
-        <legend class="p-heading--4 js-formfield-title " id="about-you-legend">Tell us more about your project (use case, volume, etc.):</legend>
+      <div class="grid-col">
+        <legend class="p-heading--4" id="about-you-legend">Tell us more about your project (use case, volume, etc.):</legend>
       </div>
       <div class="grid-col">
         <ul class="p-list">
